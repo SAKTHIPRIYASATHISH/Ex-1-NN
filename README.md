@@ -37,7 +37,7 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-IMPORT LIBRARIES:
+## IMPORT LIBRARIES:
 ~~~
 #import libraries
 from google.colab import files
@@ -47,63 +47,63 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 ~~~
-READ THE DATA:
+## READ THE DATA:
 ~~~
 df = pd.read_csv('Churn_Modelling.csv')
 print(df)
 ~~~
-CHECK DATA:
+## CHECK DATA:
 ~~~
 df.head()
 df.tail()
 df.columns
 ~~~
-CHECK THE MISSING DATA:
+## CHECK THE MISSING DATA:
 ~~~
 print(df.isnull().sum())
 ~~~
-CHECK FOR DUPLICATES:
+## CHECK FOR DUPLICATES:
 ~~~
 df.duplicated()
 ~~~
-ASSIGNING X:
+## ASSIGNING X:
 ~~~
 X = df.iloc[:, :-1].values
 print(X)
 ~~~
-ASSIGNING Y:
+## ASSIGNING Y:
 ~~~
 y = df.iloc[:,-1].values
 print(y)
 ~~~
-HANDLING MISSING VALUES:
+## HANDLING MISSING VALUES:
 ~~~
 df.fillna(df.mean().round(1), inplace=True)
 print(df.isnull().sum())
 ~~~
-CHECK FOR OUTLIERS:
+## CHECK FOR OUTLIERS:
 ~~~
 df.describe()
 ~~~
-DROPPING STRING VALUES DATA FROM DATASET: & CHECKING DATASETS AFTER DROPPING STRING VALUES DATA FROM DATASET:
+## DROPPING STRING VALUES DATA FROM DATASET: & CHECKING DATASETS AFTER DROPPING STRING VALUES DATA FROM DATASET:
 ~~~
 df1 = df.drop(['Surname','Geography','Gender'],axis=1)
 df1.head()
 ~~~
-NORMALIE THE DATASET USING (MinMax Scaler):
+## NORMALIE THE DATASET USING (MinMax Scaler):
 ~~~
 scaler = MinMaxScaler()
 df2 = pd.DataFrame(scaler.fit_transform(df1))
 print(df2)
 ~~~
-SPLIT THE DATASET:
+## SPLIT THE DATASET:
 ~~~
 X = df.iloc[:, :-1].values
 print(X)
 y = df.iloc[:,-1].values
 print(y)
 ~~~
-TRAINING AND TESTING MODEL:
+## TRAINING AND TESTING MODEL:
 ~~~
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2)
 print(X_train)
