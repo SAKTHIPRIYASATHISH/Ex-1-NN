@@ -114,7 +114,43 @@ print("Length of X_test:",len(X_test))
 
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+## DATA CHECKING:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/1c797454-f6a6-4262-b64d-124b8ecef33b)
+
+## MISSING DATA:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/d23571b2-ccdc-458f-9365-a916033e40dd)
+
+## DUPLICATES IDENTIFICATION:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/f44fab68-bf0a-4f9d-9e37-9e39cf8b2101)
+
+## VALUE OF Y:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/60520739-678a-4a91-99b7-6b9c610e308c)
+
+## OUTLIERS:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/f85a4bd7-f48f-46d5-ab5c-4b7eb05b44fa)
+
+## CHECKING DATASET AFTER DROPPING STRING VALUES DATA FROM DATASET:
+![image](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/21910d0e-136f-462c-ba85-7ff5464ce528)
+
+## NORMALIZE THE DATASET:
+![Screenshot 2024-02-24 182408](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/68af11b6-4343-430d-986a-c28b4bbecb94)
+
+## SPLIT THE DATASET:
+![Screenshot 2024-02-24 182450](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/ea29c965-aa92-40ff-9f4f-e1adc0f7e5f5)
+
+## TRAINING AND TESTING MODEL:
+![Screenshot 2024-02-24 182546](https://github.com/SAKTHIPRIYASATHISH/Ex-1-NN/assets/119104282/403152bd-8849-4a39-b5ee-d36f4e5b9b87)
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## RESULT:
